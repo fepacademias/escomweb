@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCOM WEB - Diseño y Desarrollo Web de Alto Impacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primario: #005f73; /* Azul oscuro principal */
+            --color-secundario: #0a9396; /* Verde azulado para acentos y botones */
+            --color-fondo: #f4f4f4; /* Gris muy claro para fondos de sección */
+            --color-texto-principal: #333333; /* Gris oscuro para texto */
+            --color-blanco: #ffffff;
+            --sombra-suave: 0 10px 25px rgba(0, 0, 0, 0.08);
+            --border-radius-estandar: 12px;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+            background-color: var(--color-blanco);
+            color: var(--color-texto-principal);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section (Cabecera) */
+        .hero {
+            background: linear-gradient(45deg, var(--color-primario), var(--color-secundario));
+            color: var(--color-blanco);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 25px;
+            border-radius: var(--border-radius-estandar);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            box-shadow: var(--sombra-suave);
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .cta-button {
+            background-color: var(--color-blanco);
+            color: var(--color-primario);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            background-color: var(--color-fondo);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+
+
+        /* Secciones de Contenido */
+        .section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .section:nth-of-type(odd) {
+            background-color: var(--color-fondo);
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--color-primario);
+        }
+
+        .section .section-intro {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .feature {
+            width: 100%;
+            max-width: 320px;
+            padding: 30px;
+            background-color: var(--color-blanco);
+            box-shadow: var(--sombra-suave);
+            border-radius: var(--border-radius-estandar);
+            text-align: center;
+            border-top: 4px solid var(--color-secundario);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .feature h3 {
+            color: var(--color-primario);
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #222222;
+            color: var(--color-blanco);
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .footer .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .footer p {
+            margin: 0;
+            font-weight: 300;
+        }
+        
+        .footer .contact-info {
+            font-size: 1.1em;
+            font-weight: 400;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2em;
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .hero img {
+                width: 150px;
+            }
+            .section h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <img src="logoescomweb.png" alt="Logo ESCOM WEB">
+            <h1>Webs que Cautivan, Negocios que Crecen</h1>
+            <p>Transformamos tus ideas en una presencia online profesional y efectiva. Soluciones a medida que atraen, convierten y fidelizan.</p>
+            <a href="#contacto" class="cta-button">Pide tu presupuesto</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="servicios" class="section">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <p class="section-intro">Creamos experiencias digitales completas para asegurar que tu negocio destaque en el mundo online.</p>
+                <div class="features">
+                    <div class="feature">
+                        <h3>Diseño Responsivo</h3>
+                        <p>Webs que se ven y funcionan perfectamente en cualquier dispositivo: móviles, tablets y ordenadores.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Tiendas Online (E-commerce)</h3>
+                        <p>Tiendas virtuales seguras, rápidas y fáciles de gestionar para que vendas tus productos sin complicaciones.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Mantenimiento y Soporte</h3>
+                        <p>Nos encargamos de que tu web esté siempre actualizada, segura y funcionando a máximo rendimiento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <p class="contact-info">¿Hablamos? Contacta con nosotros:</p>
+            <p class="contact-info"><strong>Email:</strong> info@escomweb.com | <strong>Teléfono:</strong> +34 619 43 42 56</p>
+            <p>© 2025 ESCOM WEB. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
